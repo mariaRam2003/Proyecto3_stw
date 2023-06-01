@@ -23,15 +23,15 @@ Puedes visitar mi página personal en https://mm-personal-website.web.app
 - 🧩 **Componentes reutilizables**: Utilizo componentes de React reutilizables para mantener un código limpio y modular.
 
 ## Estructura
-- App.js: El archivo principal de la aplicación React que define el componente App que representa la estructura de la página de la calculadora.
-- App.css: El archivo de estilos para el componente App que define la apariencia y diseño de la calculadora.
-- components/Button.js: El componente Button que representa un botón de la calculadora.
-- components/ButtonClear.js: El componente ButtonClear que representa el botón "Clear" de la calculadora.
-- components/Display.js: El componente Display que muestra la entrada y el resultado de la calculadora.
-- components: La carpeta que contiene todos los componentes utilizados en la calculadora.
+- src/components: Esta carpeta contiene los componentes utilizados en la página, como el encabezado, el formulario de contacto, la sección de proyectos, etc.
+- src/styles: Esta carpeta contiene los archivos CSS utilizados para estilizar los componentes y la página en general.
+- src/assets: Esta carpeta contiene los recursos adicionales utilizados en la página, como imágenes, logos y otros archivos multimedia.
+- src/App.js: El archivo principal de la aplicación React que define el componente App que representa la estructura de la página de la página personal.
+- src/index.js: El archivo principal de entrada que renderiza el componente App en el elemento root del documento HTML.
+- public/index.html: El archivo HTML principal que estructura la página del proyecto.
 
 ## Archivos Principales
-- *App.js*: El archivo principal de la aplicación React que define el componente App que representa la estructura de la página de la aplicación Weather App.
+- *App.js*: El archivo principal de la aplicación React que define el componente App que representa la estructura de la página.
 - *index.js*: El archivo principal de entrada que renderiza el componente App en el elemento root del documento HTML.
 - *App.css*: El archivo principal de la aplicación React que define el componente App que representa la estructura de la página de la aplicación clon de Tesla.
 - *index.html*: El archivo HTML principal que estructura la página del proyecto.
@@ -40,7 +40,7 @@ Puedes visitar mi página personal en https://mm-personal-website.web.app
 ## Instrucciones de Ejecución
 1. Clona el repositorio en tu máquina local usando:
 ```javascript
-https://github.com/mariaRam2003/Laboratorio9.git
+https://github.com/mariaRam2003/Proyecto3_stw.git
 ```
 2. Ejecuta el comando el siguiente comando para instalar las dependencias:
 ```javascript
