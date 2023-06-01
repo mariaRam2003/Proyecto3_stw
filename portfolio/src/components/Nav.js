@@ -1,36 +1,60 @@
-import React from 'react';
-import './styles/Nav.css'
+import React from "react";
+import "./styles/Nav.css";
 //iconos
-import { BsHouseDoorFill, BsPersonFill } from 'react-icons/bs';
-import { BsBriefcase, BsChatSquare } from 'react-icons/bs';
+import { BsHouseDoorFill, BsPersonFill } from "react-icons/bs";
+import { BsBriefcase, BsChatSquare } from "react-icons/bs";
 //link
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 
 const Nav = () => {
-    return (
-      <nav className='nav'>
-        <div className='container mx-auto'>
-          <div className='nav-container'>
-            <Link to='home' activeClass='active' smooth={true} spy={true} offset={-200} className='nav-link'>
-              <BsHouseDoorFill />
-            </Link>
+  return (
+    <nav className="nav">
+      <div className="container mx-auto">
+        <div className="nav-container">
+          <Link
+            to="home"
+            activeClass="active"
+            smooth={true}
+            spy={true}
+            offset={-200}
+            className="nav-link"
+          >
+            <BsHouseDoorFill />
+          </Link>
 
-            <Link to='about' activeClass='active' smooth={true} spy={true} className='nav-link'>
-              <BsPersonFill />
-            </Link>
+          <Link
+            to="about"
+            activeClass="active"
+            smooth={true}
+            spy={true}
+            className="nav-link"
+          >
+            <BsPersonFill />
+          </Link>
 
-            <Link to='work' activeClass='active' smooth={true} spy={true} className='nav-link'>
-              <BsBriefcase />
-            </Link>
-            
-            <Link to='contact' activeClass='active' smooth={true} spy={true} className='nav-link'>
-              <BsChatSquare />
-            </Link>
+          <Link
+            to="work"
+            activeClass="active"
+            smooth={true}
+            spy={true}
+            className="nav-link"
+          >
+            <BsBriefcase />
+          </Link>
 
-          </div>
+          <Link
+            to="contact"
+            activeClass="active"
+            smooth={true}
+            spy={true}
+            className="nav-link"
+          >
+            <BsChatSquare />
+          </Link>
         </div>
-      </nav>
-    );
-  }
-  
-  export default Nav;
+      </div>
+    </nav>
+  );
+};
+
+export default Nav;
