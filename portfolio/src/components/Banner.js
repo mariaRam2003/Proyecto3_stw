@@ -58,7 +58,8 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-8 max-w-lg max-auto lg:mx-0"
             >
-              info mia bla bla bla
+              Hola! Soy Maria Marta Ramirez Gil <br /> Bienvenida/o a mi pagina
+              personal
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.6)}

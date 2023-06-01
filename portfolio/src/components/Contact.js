@@ -3,6 +3,12 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const Contact = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const form = new FormData(event.target);
+    console.log(form.get("name"));
+  };
+
   return (
     <section className="py-16 lg:section" id="contact">
       <div className="container mx-auto">
@@ -25,27 +31,34 @@ const Contact = () => {
           </motion.div>
           {/* form */}
           <motion.form
+            id="form"
+            onSubmit={handleSubmit}
             variants={fadeIn("left", 0.2)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 border rounded-xl flex flex-col p-6 mb-24 items-start"
+            className="form flex-1 border rounded-xl flex flex-col p-6 mb-24 items-start"
           >
             <input
+              name="name"
               className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all mb-4"
               type="text"
               placeholder="Tu nombre"
             />
             <input
+              name="email"
               className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all mb-4"
               type="text"
               placeholder="Tu email"
             />
             <textarea
+              name="mensaje"
               className="bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-4"
               placeholder="Tu mensaje"
             ></textarea>
-            <button className="btn btn-lg">Enviar mensaje</button>
+            <button type="submit" className="btn btn-lg">
+              Enviar mensaje
+            </button>
           </motion.form>
         </div>
       </div>

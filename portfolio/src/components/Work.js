@@ -1,18 +1,18 @@
-import React from 'react';
-import './styles/Work.css'
-import { Link } from 'react-scroll';
+import React from "react";
+import "./styles/Work.css";
+import { Link } from "react-scroll";
 // motion
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 //variants
-import {fadeIn} from '../variants'
+import { fadeIn } from "../variants";
 // imagenes
-import Img1 from '../assets/portfolio-img1.png'
-import Img2 from '../assets/portfolio-img2.png'
-import Img3 from '../assets/portfolio-img3.png'
-import Img4 from '../assets/portfolio-img4.png'
-import Img5 from '../assets/portfolio-img5.png'
-import Img6 from '../assets/portfolio-img6.png'
-import Img7 from '../assets/portfolio-img7.png'
+import Img1 from "../assets/portfolio-img1.png";
+import Img2 from "../assets/portfolio-img2.png";
+import Img3 from "../assets/portfolio-img3.png";
+import Img4 from "../assets/portfolio-img4.png";
+import Img5 from "../assets/portfolio-img5.png";
+import Img6 from "../assets/portfolio-img6.png";
+import Img7 from "../assets/portfolio-img7.png";
 
 const Work = () => {
   return (
@@ -24,7 +24,7 @@ const Work = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex flex-col gap-y-7 mb-10 lg:mb-0"
+            className="flex-1 flex flex-col gap-y-9 mb-10 lg:mb-0"
           >
             {/* texto */}
             <div>
@@ -41,7 +41,7 @@ const Work = () => {
                 href="https://github.com/mariaRam2003"
                 className="btn btn-lg cursor-pointer"
                 style={{ padding: "15px 20px", marginTop: "10px" }}
-                target='_blank'
+                target="_blank"
               >
                 Visita todo mi trabajo
               </a>

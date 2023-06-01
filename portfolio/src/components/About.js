@@ -38,9 +38,11 @@ const About = () => {
           >
             <h2 className="h2 text-accent">Acerca de mi.</h2>
             <h3 className="h3 mb-4">
-              Soy estudiante en la Universidad del Valle de Guatemala.
+              Actualmente curso el 3er. año de Coputer Science &#x0026; TI
             </h3>
-            <p className="mb-6">mas info mia bla bla bla bla</p>
+            <p className="mb-6">
+              Soy estudiante en la Universidad del Valle de Guatemala.
+            </p>
             {/* stats */}
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
@@ -48,12 +50,12 @@ const About = () => {
                   className="text-[40px] font-tertiary text-gradient
                   mb-2"
                 >
-                  {inView ? <CountUp start={0} end={3} duration={7} /> : null}
-                  /5
+                  {inView ? <CountUp start={0} end={100} duration={5} /> : null}
+                  %
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
-                  Grado <br />
-                  Universitario
+                  Desarrollo <br />
+                  Web
                 </div>
               </div>
               <div>
@@ -61,11 +63,12 @@ const About = () => {
                   className="text-[40px] font-tertiary text-gradient
                   mb-2"
                 >
-                  {inView ? <CountUp start={0} end={9} duration={7} /> : null}
+                  {inView ? <CountUp start={0} end={95} duration={5} /> : null}%
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
-                  Laboratorios <br />
-                  Terminados
+                  Bases
+                  <br />
+                  de Datos
                 </div>
               </div>
               <div>
@@ -73,11 +76,11 @@ const About = () => {
                   className="text-[40px] font-tertiary text-gradient
                   mb-2"
                 >
-                  {inView ? <CountUp start={0} end={5} duration={7} /> : null}
+                  {inView ? <CountUp start={0} end={75} duration={5} /> : null}%
                 </div>
                 <div className="font-primary text-sm tracking-[2px]">
-                  Proyectos <br />
-                  Terminados
+                  Desarrolo <br />
+                  de Apps
                 </div>
               </div>
             </div>
