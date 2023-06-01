@@ -1,0 +1,21 @@
+.text-gradient {
+    background:  #CD0C2B;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+.text-gradient:hover {
+    background: #034780;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.text-gradient span {
+    display: inline-block
+}  
+
+.btn {
+    background: linear-gradient(to right, #CD0C2B, #00193A);
+}
+.btn:hover {
+    background: linear-gradient(to right, #00193A, #CD0C2B);
+    box-shadow: 0 0 10px 0.5px rgba(255, 255, 255, 0.5);
+}
