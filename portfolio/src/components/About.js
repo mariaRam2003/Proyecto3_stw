@@ -38,7 +38,7 @@ const About = () => {
           >
             <h2 className="h2 text-accent">Acerca de mi.</h2>
             <h3 className="h3 mb-4">
-              Actualmente curso el 3er. año de Coputer Science &#x0026; TI
+              Actualmente curso el 3er. año de Computer Science &#x0026; TI
             </h3>
             <p className="mb-6">
               Soy estudiante en la Universidad del Valle de Guatemala.
