@@ -5,6 +5,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../variants';
+import { Link } from 'react-scroll';
 
 const Banner = () => {
   return (
@@ -66,7 +67,9 @@ const Banner = () => {
               className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'
             >
               <button className='btn btn-lg'>Contáctame</button>
-              <a href='#' className='text-gradient btn-link'>Mi Portafolio</a>
+              <Link to="work" className="text-gradient btn-link">
+                Mi Portafolio
+              </Link>
             </motion.div>
             <motion.div 
               variants={fadeIn('up', 0.7)} 
@@ -75,10 +78,10 @@ const Banner = () => {
               viewport={{once: false, amount: 0.7}} 
               className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'
             >
-              <a href='#'>
+              <a href='https://github.com/mariaRam2003' target="_blank">
                 <FaGithub />
               </a>
-              <a href='#'>
+              <a href='https://www.linkedin.com/in/mariarmrzg/' target="_blank">
                 <FaLinkedin />
               </a>
             </motion.div>

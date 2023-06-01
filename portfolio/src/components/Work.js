@@ -18,7 +18,13 @@ const Work = () => {
     <div className='work.section' id='work'>
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row gap-x-10'>
-          <div className='flex-1 flex flex-col gap-y-7 mb-10 lg:mb-0'>
+          <motion.div 
+            variants={fadeIn('right', 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className='flex-1 flex flex-col gap-y-7 mb-10 lg:mb-0'
+          >
             {/* texto */}
             <div>
               <h2 className='h2 leading-tigh text-accent'>
@@ -107,8 +113,14 @@ const Work = () => {
                 </span>
               </div>
             </div>
-          </div>
-          <div className='flex-1 flex flex-col gap-y-8'>
+          </motion.div>
+          <motion.div 
+            variants={fadeIn('left', 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className='flex-1 flex flex-col gap-y-8'
+          >
             {/* imagen 2*/}
             <div className='group relative overflow-hidden border-2
             border-white/50 rounded-xl'>
@@ -209,7 +221,7 @@ const Work = () => {
                 </span>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
   </div>
