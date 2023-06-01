@@ -32,22 +32,22 @@ const Banner = () => {
               viewport={{once: false, amount: 0.7}} 
               className='mb-6 text-[36px] lg:text-[45px] font-secondary font-semibold uppercase leading-[1]'
             >
-              <span className=''>I am a</span>
+              <span className=''>
               <TypeAnimation 
                 sequence={[
-                  'Developer',
+                  '<Developer/>',
                   2000,
-                  'Designer',
+                  '<Designer/>',
                   2000,
-                  'Programmer',
+                  '<Programmer/>',
                   2000,
-                  'Student',
+                  '<Student/>',
                   2000,
                 ]}
                 speed={50}
                 className='text-accent'
                 repeat={Infinity}
-              />
+              /></span>
             </motion.div>
             <motion.p 
               variants={fadeIn('up', 0.5)} 
