@@ -1,17 +1,18 @@
-import React from "react";
-import "./styles/Work.css";
+import React from 'react';
+import './styles/Work.css'
+import { Link } from 'react-scroll';
 // motion
-import { motion } from "framer-motion";
+import {motion} from 'framer-motion'
 //variants
-import { fadeIn } from "../variants";
+import {fadeIn} from '../variants'
 // imagenes
-import Img1 from "../assets/portfolio-img1.png";
-import Img2 from "../assets/portfolio-img2.png";
-import Img3 from "../assets/portfolio-img3.png";
-import Img4 from "../assets/portfolio-img4.png";
-import Img5 from "../assets/portfolio-img5.png";
-import Img6 from "../assets/portfolio-img6.png";
-import Img7 from "../assets/portfolio-img7.png";
+import Img1 from '../assets/portfolio-img1.png'
+import Img2 from '../assets/portfolio-img2.png'
+import Img3 from '../assets/portfolio-img3.png'
+import Img4 from '../assets/portfolio-img4.png'
+import Img5 from '../assets/portfolio-img5.png'
+import Img6 from '../assets/portfolio-img6.png'
+import Img7 from '../assets/portfolio-img7.png'
 
 const Work = () => {
   return (
@@ -36,7 +37,14 @@ const Work = () => {
                 dentro de la universidad como parte del curso Sistemas y
                 Tecnoloias Web.
               </p>
-              <button className="btn btn-sm">Ve todo mi trabajo</button>
+              <a
+                href="https://github.com/mariaRam2003"
+                className="btn btn-lg cursor-pointer"
+                style={{ padding: "15px 20px", marginTop: "10px" }}
+                target='_blank'
+              >
+                Visita todo mi trabajo
+              </a>
             </div>
             {/* imagen 1*/}
             <div

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 // countup
 import CountUp from "react-countup";
 // intersection observer
@@ -81,7 +82,13 @@ const About = () => {
               </div>
             </div>
             <div className="flex gap-x-8 items-center">
-              <button className="btn btn-lg">Contáctame</button>
+              <Link
+                to="contact"
+                className="btn btn-lg cursor-pointer"
+                style={{ padding: "15px 20px", marginTop: "10px" }}
+              >
+                Contáctame
+              </Link>
             </div>
           </motion.div>
         </div>

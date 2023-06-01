@@ -9,11 +9,9 @@ const Header = () => {
       <div className="container mx-auto">
         <div className="container-nav">
           {/* logo */}
-          <a href="#">
+          <a href="">
             <img src={Logo} alt="" />
           </a>
-          {/* button */}
-          <button className="btn btn-sm">Trabaja conmigo</button>
         </div>
       </div>
     </header>
