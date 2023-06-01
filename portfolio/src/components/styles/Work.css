@@ -1,0 +1,9 @@
+.text-gradient {
+    background:  linear-gradient(to right, #CD0C2B,  #023e8a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.work-section {
+  height: 800px;
+}
