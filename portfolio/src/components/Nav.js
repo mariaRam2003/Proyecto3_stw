@@ -2,7 +2,7 @@ import React from 'react';
 import './styles/Nav.css'
 //iconos
 import { BsHouseDoorFill, BsPersonFill } from 'react-icons/bs';
-import { BsClipboardData, BsBriefcase, BsChatSquare } from 'react-icons/bs';
+import { BsBriefcase, BsChatSquare } from 'react-icons/bs';
 //link
 import { Link } from 'react-scroll';
 
@@ -17,10 +17,6 @@ const Nav = () => {
 
             <Link to='about' activeClass='active' smooth={true} spy={true} className='nav-link'>
               <BsPersonFill />
-            </Link>
-
-            <Link to='services' activeClass='active' smooth={true} spy={true} className='nav-link'>
-              <BsClipboardData />
             </Link>
 
             <Link to='work' activeClass='active' smooth={true} spy={true} className='nav-link'>
